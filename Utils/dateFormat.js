@@ -1,4 +1,6 @@
-let dateStr=new Date(this.Date).toString;
+const addDateSuffix=(date)=>{
+    let dateStr=date.toString();
+
 const lastChar=dateStr.charAt(dateStr.length-1);
 
 if(lastChar==='1' && dateStr!=='11'){
@@ -15,6 +17,7 @@ else if(lastChar==='4' && dateStr !='14'){
 }
 
 return dateStr;
+};
 
 module.exports=(timestamp,{monthLength='short',dateSuffix=true}={})=>{
     const months={
