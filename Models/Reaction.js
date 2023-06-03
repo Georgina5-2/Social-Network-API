@@ -1,6 +1,6 @@
-const{Schema,model}=require('mongoose');
+const{Schema,Types}=require('mongoose');
 const dateFormat=require('../Utils/dateFormat');
-const ReactionSchema=new Schema({
+const reactionSchema=new Schema({
     reactionId:{
         type: Schema.Types.ObjectId,
         default:()=> new Types.ObjectId(),
@@ -21,10 +21,13 @@ const ReactionSchema=new Schema({
         get:timestamp=>dateFormat(timestamp)
 
     },
+},
+{
     toJSON:{
         getters:true,
     },
     id:false
+
 });
-const Reaction=model('Reaction',ReactionSchema);
-module.exports=Reaction;
+
+module.exports=reactionSchema;

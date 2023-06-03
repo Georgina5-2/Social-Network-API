@@ -18,7 +18,7 @@ module.exports={
             const userData=await User.findOne({_id:req.params.userId})
             .select("-__v")
             .populate("thoughts")
-            .populate({path:friends,select:"-thoughts"});
+            //.populate({path:friends,select:"-thoughts"});
         if(!userData){
             res.status(400).json({message:`OOPS,No such user found!`});
             return;        

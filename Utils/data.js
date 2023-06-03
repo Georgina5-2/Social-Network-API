@@ -8,8 +8,8 @@ const userNames=[
     "Heather",
     "Emily",
     "Sydney",
-    "Wyatt"
-];
+    "Wyatt",
+]
 
 const thoughtsArr=[
     "Having real friends is the greatest luxury. Being a true friend is the greatest quality of a man",
@@ -22,7 +22,7 @@ const thoughtsArr=[
 
     "Not all people are your friends, be careful who you trust. Someone may abuse your kindness",
 
-    "Always be a friend who will lend a hand in trouble. It’s easy to be a good friend when everything is great",
+    "Always be a friend who will lend a hand in trouble. It is easy to be a good friend when everything is great",
 
     "A true friend helps you take off your mask and expose your soul",
 
@@ -40,11 +40,11 @@ const thoughtsArr=[
 
     "Do different species of animals communicate with each other, or they need a translator",
 
-    "If you try to rob a bank, you won’t have problems with bills for the next ten years, whether you succeed in the robbery or not",
+    "If you try to rob a bank, you wont have problems with bills for the next ten years, whether you succeed in the robbery or not",
 
     "What if dogs lick us because they know we have bones inside of us",
 
-    "What if I’m not good enough",
+    "What if Im not good enough",
 
     "Loneliness may be painful, but you need to learn to feel comfortable even when you are alone with yourself",
 
@@ -56,10 +56,10 @@ const thoughtsArr=[
 
     "It hurts when you see that you are not as important to someone as he is to you",
 
-    "It is sad when it is difficult for you, and there is no one around you who will support you. That’s why you have to be strong and overcome everything on your own",
+    "It is sad when it is difficult for you, and there is no one around you who will support you. Thats why you have to be strong and overcome everything on your own",
 
  
-];
+]
 
 const reactionsArr = [
     "LOL",
@@ -67,24 +67,24 @@ const reactionsArr = [
     "So silly!",
     "Very thoughtful indeed!!",
     "not funny",
-];
+]
 
-const getRandomItem=(array)=>array[Math.floor(Math.random()*array.length)];
-const getRandomThoughts=(int)=>{
+const getRandomItem=(arrayData)=>arrayData[Math.floor(Math.random()*arrayData.length)];
+const getRandomThoughts=(integr)=>{
     const results=[];
-    for(let i=0;i<int;i++){
+    for(let i=0;i<integr;i++){
         results.push({
-            thoughtText:getRandomItem(thoughtsArr);
-            username:getRandomItem(userNames);
+            thoughtText:getRandomItem(thoughtsArr),
+            userName:getRandomItem(userNames),
             reactions:[...getRandomReactions(3)],
         });
     }
     return results;
 }
 
-const getRandomReactions=(int)=>{
+const getRandomReactions=(integr)=>{
     const results=[];
-    for(let i=0;i<int;i++)
+    for(let i=0;i<integr;i++)
     {
         results.push({
             reactionBody:getRandomItem(reactionsArr),

@@ -27,7 +27,7 @@ module.exports={
         }
     },
 
-    async addThought(req,res){
+    async createThought(req,res){
         try{
             const thoughtData=await Thought.create(req.body);
             const userData=await User.findOneAndUpdate(
@@ -64,7 +64,7 @@ module.exports={
         }
     },
 
-    async removeThought(req,res){
+    async deleteThought(req,res){
         try{
             const thoughtData=await Thought.findOneAndDelete(
                 {_id:req.params.thoughtId},
@@ -120,4 +120,4 @@ module.exports={
                 res.status(500).json(err);
             }
         },
-    };
+}
