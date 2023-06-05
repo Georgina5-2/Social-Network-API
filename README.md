@@ -27,6 +27,9 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 * Version Control Systems - Git and Github
 * Coding Platform - Microsoft Visual Studio Code *Programming languages - HTML *Stylesheets - CSS *Script-file - Javascript
 * Commands - Git and MS-DOS commands
+* Server - node.js
+* Database -MongoDB
+* 
 ### Installations and Repository creations
 * Install - Gitbash, Microsoft Visual Studio Code
 * Repository - Go to 'Github.com' and create a public repository in your Github account
@@ -38,6 +41,24 @@ Go to Github.com, create a public account, and go to 'Create Repository' at the 
 Click on the tab 'Code' and copy the link to the repository
 
 <img width="307" alt="Screenshot 2023-05-25 234347" src="https://github.com/Georgina5-2/Social-Network-API/assets/122113060/8f22b0bd-1239-4ba6-8817-7c1bfc98c96e">
+
+Link to the video walkthrough of the project is here
+
+
+https://github.com/Georgina5-2/Social-Network-API/assets/122113060/1bbde868-7bba-4d5e-84af-872f92861778
+
+# Acknowledgements
+
+https://mongoosejs.com/docs/api/model.html#Model.findOneAndDelete()
+
+https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file
+
+https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/
+
+# Link to the deployed code:
+
+
+
 
 
 
