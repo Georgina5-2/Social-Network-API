@@ -57,8 +57,7 @@ https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/
 
 # Link to the deployed code:
 
-https://github.com/Georgina5-2/Social-Network-API
-
+https://georgina5-2.github.io/Social-Network-API/
 
 
 
